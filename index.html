@@ -8,7 +8,64 @@
   </head>
   <body>
     <section class="section">
-      <h1>Hello World!!!</h1>
+      <div class="content-wrapper">
+        <h1 class="title">Демо-версия</h1>
+        <p class="description">
+          За&nbsp;18&nbsp;лет деятельности было реализовано более
+          500&nbsp;крупных, а&nbsp;так&nbsp;же, не&nbsp;менее 2500 средних
+          и&nbsp;малых проектов. Используя знания и&nbsp;накопленный опыт
+          мы&nbsp;можем предложить
+        </p>
+        <button class="button">
+          Попробовать бесплатно
+          <span class="circle">
+            <img src="assets/img/arrow-up-right.svg" alt="go over" />
+          </span>
+        </button>
+      </div>
+      <div class="main-image">
+        <img src="assets/img/image_910.webp" alt="image PC" />
+      </div>
+    </section>
+    <section class="modal">
+      <div class="cross">
+        <img src="assets/img/cross.svg" alt="to close" />
+      </div>
+      <div class="modal__title">
+        <h2>Войти в систему</h2>
+      </div>
+      <form id="loginForm">
+        <label for="username">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Email/Телефон"
+            required
+          />
+        </label>
+        <label for="password">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Пароль"
+            required
+          />
+        </label>
+        <label for="passwordConsent">
+          <input
+            type="checkbox"
+            id="passwordConsent"
+            name="passwordConsent"
+            required
+          />
+          Запомнить пароль
+        </label>
+        <a href="#">Восстановить</a>
+        <button type="submit">Войти</button>
+        <button onclick="location.href='index.html'">Зарегестрироваться</button>
+      </form>
     </section>
     <script src="index.js"></script>
   </body>
