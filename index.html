@@ -30,14 +30,14 @@
           <img src="assets/img/main-image.webp" alt="image PC" />
         </div>
       </section>
-      <section class="modal">
+      <section class="modal-section">
         <div class="cross">
           <img src="assets/img/cross.svg" alt="to close" />
         </div>
         <div class="modal__title">
           <h2>Войти в систему</h2>
         </div>
-        <form id="loginForm">
+        <form id="login-form">
           <input
             class="username"
             type="text"
@@ -54,19 +54,20 @@
             placeholder="Пароль"
             required
           />
-          <div onclick="" class="password-consent">
+          <div class="password-consent">
             <img src="assets/img/check-square-2.svg" alt="flag" />
             Запомнить пароль
           </div>
-          <div class="recover">
-            <a class="recover-link" href="#">Восстановить</a>
-          </div>
+          <button class="button-recover" onclick="location.href='index.html'">
+            Восстановить
+          </button>
           <button class="button-submit" type="submit">Войти</button>
           <button class="button-register" onclick="location.href='index.html'">
             Зарегестрироваться
           </button>
         </form>
       </section>
+      <div class="overlay"></div>
     </main>
     <script src="index.js"></script>
   </body>
